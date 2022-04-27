@@ -1,11 +1,6 @@
-module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-
- # bucket = "my-s3-bucket"
-  acl    = "private"
-
-  versioning = {
-    enabled = true
-  }
- bucket_prefix = "Snehak"
+module "s3-bucket" {
+  source  = "app.terraform.io/sk-cdwlab/s3-bucket/aws"
+  version = "3.1.1"
+  # insert required variables here
+  bucket_perfix = "snehak"
 }
