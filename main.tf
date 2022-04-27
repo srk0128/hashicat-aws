@@ -187,6 +187,7 @@ resource "null_resource" "configure-cat-app" {
 
 resource "tls_private_key" "hashicat" {
   algorithm = "RSA"
+  Department = "devops"
 }
 
 locals {
